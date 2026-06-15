@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-## Research
+## Community dynamics of adaptive immune cells
 
-### Community dynamics of adaptive immune cells
-
-### T cell receptor specificity
+## T cell receptor specificity

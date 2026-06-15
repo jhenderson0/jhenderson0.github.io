@@ -207,60 +207,61 @@ a:hover {
 ----------------------------- */
 
 .research-grid {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 18px 0 18px;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+  margin: 28px 0;
 }
 
-.research-grid thead {
-  display: none;
-}
-
-.research-grid td {
-  border: none;
-  padding: 0;
-  vertical-align: top;
-}
-
-.research-grid td:first-child {
-  width: 320px;
-  min-width: 220px;
-  height: 220px;
+.research-figure {
+  min-height: 220px;
   border: 1px dashed var(--line);
   border-radius: 8px;
   color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  vertical-align: middle;
   font-size: 0.95rem;
 }
 
-.research-grid td:last-child {
-  padding-left: 34px;
+.research-text {
   text-align: right;
 }
 
-.research-title {
-  display: block;
+.research-text h3 {
   font-size: 1.8rem;
   line-height: 1.2;
-  font-weight: 700;
   color: var(--navy);
-  margin-top: 12px;
-  margin-bottom: 14px;
+  margin: 8px 0 14px;
 }
 
-.research-description {
-  display: block;
-  color: var(--text);
-  text-align: right;
+.research-text p {
+  margin: 0;
+}
+
+.content-card hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 36px 0;
 }
 
 @media (max-width: 760px) {
-  .research-title {
-    font-size: 1.45rem;
+  .research-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
-  .research-description {
+  .research-figure {
+    min-height: 180px;
+  }
+
+  .research-text {
     text-align: left;
+  }
+
+  .research-text h3 {
+    font-size: 1.45rem;
   }
 }

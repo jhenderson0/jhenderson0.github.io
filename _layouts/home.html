@@ -30,17 +30,17 @@
         {% endif %}
 
         <div class="profile-links">
-          {% if site.scholar_url %}
+        {% if site.scholar_url %}
             <a href="{{ site.scholar_url }}">Google Scholar</a>
-          {% endif %}
+        {% endif %}
 
-          {% if site.github_url %}
+        {% if site.github_url %}
             <a href="{{ site.github_url }}">GitHub</a>
-          {% endif %}
+        {% endif %}
 
-          {% if site.email %}
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          {% endif %}
+        {% if site.email %}
+            <span class="email">{{ site.email }}</span>
+        {% endif %}
         </div>
       </aside>
 

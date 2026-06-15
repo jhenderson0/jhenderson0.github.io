@@ -8,7 +8,7 @@ permalink: /research/
 
 |  |  |
 |---|---|
-| Figure placeholder |### **Spatial immunology** |
+| Figure placeholder |<h3>Spatial immunology</h3> |
 {: .research-grid}
 
 **Related publications**
@@ -18,7 +18,7 @@ Sureshchandra, S., Henderson, J.F.D., Levendosky, E., Bhattacharyya, S., Kastens
 
 |  |  |
 |---|---|
-| Figure placeholder |### **Community dynamics of Adaptive Immune Cells** |
+| Figure placeholder |<h3>Community dynamics of Adaptive Immune Cells</h3>|
 {: .research-grid}
 
 **Related publications**
@@ -30,7 +30,7 @@ Sureshchandra, S., Henderson, J.F.D., Levendosky, E., Bhattacharyya, S., Kastens
 
 |  |  |
 |---|---|
-| Figure placeholder |### **T cell Receptor Specificity** |
+| Figure placeholder |<h3>T cell Receptor Specificity</h3>|
 {: .research-grid}
 
 **Related publications**

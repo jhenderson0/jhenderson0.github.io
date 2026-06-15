@@ -239,11 +239,8 @@ a:hover {
   text-align: right;
 }
 
-.research-text {
-  text-align: right;
-}
-
 .research-title {
+  display: block;
   font-size: 1.8rem;
   line-height: 1.2;
   font-weight: 700;
@@ -252,66 +249,18 @@ a:hover {
   margin-bottom: 14px;
 }
 
-.research-text p {
-  margin: 0;
+.research-description {
+  display: block;
   color: var(--text);
+  text-align: right;
 }
-
-.content-card hr {
-  border: none;
-  border-top: 1px solid var(--line);
-  margin: 36px 0;
-}
-
-/* -----------------------------
-   Mobile layout
------------------------------ */
 
 @media (max-width: 760px) {
-  .site-header {
-    padding: 32px 0 20px;
-  }
-
-  .site-header h1 {
-    font-size: 2rem;
-  }
-
-  .home-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-panel {
-    width: 100%;
-    max-width: none;
-  }
-
-  .content-card {
-    padding: 26px;
-  }
-
-  .research-grid,
-  .research-grid tbody,
-  .research-grid tr,
-  .research-grid td {
-    display: block;
-    width: 100%;
-  }
-
-  .research-grid td:first-child {
-    width: 100%;
-    margin-bottom: 18px;
-  }
-
-  .research-grid td:last-child {
-    padding-left: 0;
-    text-align: left;
-  }
-
-  .research-text {
-    text-align: left;
-  }
-
   .research-title {
     font-size: 1.45rem;
+  }
+
+  .research-description {
+    text-align: left;
   }
 }

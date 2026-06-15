@@ -1,0 +1,138 @@
+:root {
+  --navy: #0b1f3a;
+  --blue: #12355b;
+  --blue-light: #dbe7f4;
+  --grey-bg: #f3f5f7;
+  --card: #ffffff;
+  --text: #1f2933;
+  --muted: #667085;
+  --line: #d9dee7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--grey-bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  background: var(--navy);
+  color: white;
+  padding: 42px 0 24px;
+  border-bottom: 5px solid var(--blue);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 8px 0 24px;
+  color: var(--blue-light);
+  font-size: 1.05rem;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover,
+.nav a.active {
+  border-bottom-color: var(--blue-light);
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 36px;
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+.sidebar {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 22px;
+  height: fit-content;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.contact p {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--blue);
+}
+
+.content {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 34px 40px;
+}
+
+.content h2 {
+  color: var(--navy);
+  margin-top: 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.content h3 {
+  color: var(--blue);
+  margin-top: 28px;
+}
+
+.footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    max-width: 320px;
+  }
+
+  .content {
+    padding: 26px;
+  }
+}

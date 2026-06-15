@@ -44,7 +44,7 @@ permalink: /research/
 <div class="research-block">
   <div class="research-grid">
     <div class="research-figure">
-      Figure placeholder
+      <img src="/assets/images/specificity.svg" alt="T cell Specificity">
     </div>
 
     <div class="research-text">

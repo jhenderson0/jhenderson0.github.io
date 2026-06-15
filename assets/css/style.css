@@ -239,12 +239,22 @@ a:hover {
   text-align: right;
 }
 
-.research-grid td:last-child strong {
-  display: block;
+.research-text {
+  text-align: right;
+}
+
+.research-title {
   font-size: 1.8rem;
   line-height: 1.2;
+  font-weight: 700;
   color: var(--navy);
   margin-top: 12px;
+  margin-bottom: 14px;
+}
+
+.research-text p {
+  margin: 0;
+  color: var(--text);
 }
 
 .content-card hr {
@@ -297,7 +307,11 @@ a:hover {
     text-align: left;
   }
 
-  .research-grid td:last-child strong {
+  .research-text {
+    text-align: left;
+  }
+
+  .research-title {
     font-size: 1.45rem;
   }
 }

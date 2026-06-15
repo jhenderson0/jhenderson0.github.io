@@ -191,7 +191,6 @@ a:hover {
   color: var(--muted);
 }
 
-
 /* -----------------------------
    Footer
 ----------------------------- */
@@ -201,33 +200,6 @@ a:hover {
   font-size: 0.9rem;
   padding: 28px 0;
   border-top: 1px solid var(--line);
-}
-
-/* -----------------------------
-   Mobile layout
------------------------------ */
-
-@media (max-width: 760px) {
-  .site-header {
-    padding: 32px 0 20px;
-  }
-
-  .site-header h1 {
-    font-size: 2rem;
-  }
-
-  .home-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .profile-panel {
-    width: 100%;
-    max-width: none;
-  }
-
-  .content-card {
-    padding: 26px;
-  }
 }
 
 /* -----------------------------
@@ -264,6 +236,15 @@ a:hover {
 
 .research-grid td:last-child {
   padding-left: 34px;
+  text-align: right;
+}
+
+.research-grid td:last-child strong {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  color: var(--navy);
+  margin-top: 12px;
 }
 
 .content-card hr {
@@ -272,7 +253,32 @@ a:hover {
   margin: 36px 0;
 }
 
+/* -----------------------------
+   Mobile layout
+----------------------------- */
+
 @media (max-width: 760px) {
+  .site-header {
+    padding: 32px 0 20px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-panel {
+    width: 100%;
+    max-width: none;
+  }
+
+  .content-card {
+    padding: 26px;
+  }
+
   .research-grid,
   .research-grid tbody,
   .research-grid tr,
@@ -288,5 +294,10 @@ a:hover {
 
   .research-grid td:last-child {
     padding-left: 0;
+    text-align: left;
+  }
+
+  .research-grid td:last-child strong {
+    font-size: 1.45rem;
   }
 }

@@ -16,6 +16,8 @@ permalink: /research/
 - **[Deep profiling of human T cells defines compartmentalized clones and phenotypic trajectories across blood and tonsils](https://www.cell.com/immunity/fulltext/S1074-7613(25)00479-0)** Immunity (2025) <br> 
 Sureshchandra, S., Henderson, J.F.D., Levendosky, E., Bhattacharyya, S., Kastenschmidt, J.M., Sorn, A.M., Mitul, M.T., Yates, T.B., Cheng, E., Benchorin, A. and Batucal, K.,
 
+---
+
 |  |  |
 |---|---|
 | Figure placeholder |**Community dynamics of Adaptive Immune Cells**|

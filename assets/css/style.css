@@ -125,14 +125,34 @@ a {
 
 @media (max-width: 760px) {
   .page {
-    grid-template-columns: 1fr;
-  }
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 36px;
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
 
-  .sidebar {
-    max-width: 320px;
-  }
+.page.no-sidebar {
+  grid-template-columns: 1fr;
+}
 
-  .content {
-    padding: 26px;
-  }
+.sidebar {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+  min-width: 0;
+}
+
+.contact p {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+}
+
+.contact a {
+  word-break: break-word;
+}
 }

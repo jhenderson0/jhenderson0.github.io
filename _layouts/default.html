@@ -22,26 +22,28 @@
       </div>
     </header>
 
-    <main class="container page">
-      <aside class="sidebar">
-        {% if site.profile_image %}
-          <img class="profile" src="{{ site.profile_image | relative_url }}" alt="Profile photo">
-        {% endif %}
-
-        <div class="contact">
-          {% if site.email %}
-            <p>{{ site.email }}</p>
+    <main class="container page {% unless page.url == '/' %}no-sidebar{% endunless %}">
+      {% if page.url == "/" %}
+        <aside class="sidebar">
+          {% if site.profile_image %}
+            <img class="profile" src="{{ site.profile_image | relative_url }}" alt="Profile photo">
           {% endif %}
 
-          {% if site.github_url %}
-            <p><a href="{{ site.github_url }}">GitHub</a></p>
-          {% endif %}
+          <div class="contact">
+            {% if site.email %}
+              <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            {% endif %}
 
-          {% if site.scholar_url %}
-            <p><a href="{{ site.scholar_url }}">Google Scholar</a></p>
-          {% endif %}
-        </div>
-      </aside>
+            {% if site.github_url %}
+              <p><a href="{{ site.github_url }}">GitHub</a></p>
+            {% endif %}
+
+            {% if site.scholar_url %}
+              <p><a href="{{ site.scholar_url }}">Google Scholar</a></p>
+            {% endif %}
+          </div>
+        </aside>
+      {% endif %}
 
       <section class="content">
         {{ content }}

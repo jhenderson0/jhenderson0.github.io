@@ -21,7 +21,29 @@
       </div>
     </header>
 
-    <main class="container single-page">
+    <main class="container home-layout">
+      <section class="profile-panel">
+        {% if site.profile_image %}
+          <img class="profile-photo" src="{{ site.profile_image | relative_url }}" alt="{{ site.title }}">
+        {% else %}
+          <div class="profile-placeholder">Photo</div>
+        {% endif %}
+
+        <div class="profile-links">
+          {% if site.scholar_url %}
+            <a href="{{ site.scholar_url }}">Google Scholar</a>
+          {% endif %}
+
+          {% if site.github_url %}
+            <a href="{{ site.github_url }}">GitHub</a>
+          {% endif %}
+
+          {% if site.email %}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          {% endif %}
+        </div>
+      </section>
+
       <section class="content-card">
         {{ content }}
       </section>

@@ -1,3 +1,7 @@
+/* -----------------------------
+   Base colour scheme
+----------------------------- */
+
 :root {
   --navy: #0b1f3a;
   --blue: #12355b;
@@ -8,6 +12,10 @@
   --muted: #667085;
   --line: #d9dee7;
 }
+
+/* -----------------------------
+   General page styling
+----------------------------- */
 
 * {
   box-sizing: border-box;
@@ -26,6 +34,18 @@ body {
   margin: 0 auto;
   padding: 0 24px;
 }
+
+a {
+  color: var(--blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Header and navigation
+----------------------------- */
 
 .site-header {
   background: var(--navy);
@@ -65,78 +85,57 @@ body {
   border-bottom-color: var(--blue-light);
 }
 
-.page {
-  display: grid;
-  grid-template-columns: 230px 1fr;
-  gap: 36px;
+/* -----------------------------
+   Normal pages:
+   Research and Publications
+----------------------------- */
+
+.single-page {
   padding-top: 40px;
   padding-bottom: 56px;
 }
 
-.sidebar {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 22px;
-  height: fit-content;
-}
-
-.profile {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 18px;
-}
-
-.contact p {
-  margin: 8px 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-a {
-  color: var(--blue);
-}
-
-.content {
+.content-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
   padding: 34px 40px;
+  min-width: 0;
 }
 
-.content h2 {
+.content-card h2 {
   color: var(--navy);
   margin-top: 0;
   border-bottom: 1px solid var(--line);
   padding-bottom: 8px;
 }
 
-.content h3 {
+.content-card h3 {
   color: var(--blue);
   margin-top: 28px;
 }
 
-.footer {
-  color: var(--muted);
-  font-size: 0.9rem;
-  padding: 28px 0;
-  border-top: 1px solid var(--line);
+.content-card p {
+  margin-top: 0;
 }
 
-@media (max-width: 760px) {
-  .page {
+.content-card li {
+  margin-bottom: 12px;
+}
+
+/* -----------------------------
+   About Me homepage layout
+----------------------------- */
+
+.home-layout {
   display: grid;
-  grid-template-columns: 310px 1fr;
+  grid-template-columns: minmax(340px, 390px) minmax(0, 1fr);
   gap: 36px;
   padding-top: 40px;
   padding-bottom: 56px;
 }
 
-.page.no-sidebar {
-  grid-template-columns: 1fr;
-}
-
-.sidebar {
+.profile-panel {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -145,14 +144,79 @@ a {
   min-width: 0;
 }
 
-.contact p {
-  margin: 8px 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-  overflow-wrap: anywhere;
+.profile-photo {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
 }
 
-.contact a {
-  word-break: break-word;
+.profile-placeholder {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed var(--line);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
 }
+
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.profile-links a {
+  color: var(--blue);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  line-height: 1.35;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------
+   Footer
+----------------------------- */
+
+.footer {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 28px 0;
+  border-top: 1px solid var(--line);
+}
+
+/* -----------------------------
+   Mobile layout
+----------------------------- */
+
+@media (max-width: 760px) {
+  .site-header {
+    padding: 32px 0 20px;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-panel {
+    width: 100%;
+    max-width: none;
+  }
+
+  .content-card {
+    padding: 26px;
+  }
 }

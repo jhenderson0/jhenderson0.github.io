@@ -6,10 +6,20 @@ permalink: /research/
 
 ## Research Interests
 
-|  |  |
-|---|---|
-| Figure placeholder | <div class="research-text"><div class="research-title">Spatial immunology</div><p>Your text here.</p></div> |
-{: .research-grid}
+---
+
+<div class="research-grid">
+  <div class="research-figure">
+    Figure placeholder
+  </div>
+
+  <div class="research-text">
+    <h3>Spatial immunology</h3>
+    <p>
+      
+    </p>
+  </div>
+</div>
 
 **Related publications**
 
@@ -18,22 +28,19 @@ Sureshchandra, S., Henderson, J.F.D., Levendosky, E., Bhattacharyya, S., Kastens
 
 ---
 
-|  |  |
-|---|---|
-| Figure placeholder |<div class="research-text"><div class="research-title">Community dynamics of Adaptive Immune Cells</div><p>Your text here.</p></div> |
-{: .research-grid}
+<div class="research-grid">
+  <div class="research-figure">
+    Figure placeholder
+  </div>
 
-**Related publications**
+  <div class="research-text">
+    <h3>T cell Receptor Specificity</h3>
+    <p>
+      
+    </p>
+  </div>
+</div>
 
-- **[Fluctuating environments are sufficient to drive substantial variability in species abundance across locations](https://arxiv.org/abs/2603.02403)** (2026)  
-  Henderson, J.F.D. and Tiffeau-Mayer, A.
-
----
-
-|  |  |
-|---|---|
-| Figure placeholder |<div class="research-text"><div class="research-title">T cell Receptor Specificity</div><p>Your text here.</p></div> |
-{: .research-grid}
 
 **Related publications**
 
@@ -46,5 +53,25 @@ Nagano, Y., Pyo, A.G.T., Milighetti, M., Henderson, J.F.D., Shawe-Taylor, J., Ch
 
 - **[Limits on inferring T cell specificity from partial information](https://www.pnas.org/doi/abs/10.1073/pnas.2408696121)** PNAS (2024) <br>
 Henderson, J.F.D., Nagano, Y., Milighetti, M. and Tiffeau-Mayer, A.,
+
+---
+
+<div class="research-grid">
+  <div class="research-figure">
+    Figure placeholder
+  </div>
+
+  <div class="research-text">
+    <h3>Community dynamics of adaptive immune cells</h3>
+    <p>
+      
+    </p>
+  </div>
+</div>
+
+**Related publications**
+
+- **[Fluctuating environments are sufficient to drive substantial variability in species abundance across locations](https://arxiv.org/abs/2603.02403)** (2026)  
+  Henderson, J.F.D. and Tiffeau-Mayer, A.
 
 ---

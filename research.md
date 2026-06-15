@@ -15,7 +15,7 @@ permalink: /research/
     <div class="research-text">
       <h3>Spatio-temporal Variability of the Immune System</h3>
       <p>
-        Add description text here.
+        Stay tuned!
       </p>
     </div>
   </div>
@@ -50,7 +50,7 @@ permalink: /research/
     <div class="research-text">
       <h3>T cell Receptor Specificity</h3>
       <p>
-        Add description text here.
+        Stay tuned!
       </p>
     </div>
   </div>
@@ -85,13 +85,13 @@ permalink: /research/
 <div class="research-block">
   <div class="research-grid">
     <div class="research-figure">
-      Figure placeholder
+      <img src="/assets/images/community_dynamics.svg" alt="Community dynamics">
     </div>
 
     <div class="research-text">
       <h3>Community Dynamics of Adaptive Immune Cells</h3>
       <p>
-        Add description text here.
+        Stay tuned!
       </p>
     </div>
   </div>
